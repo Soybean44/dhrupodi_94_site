@@ -1,6 +1,6 @@
-# 🫖 The TEA Stack
+# Dhrupodi 94 Site 
 
-Welcome to the most minimal stack out there. This stack makes static site generation a breeze.
+The source code for the Dhrupodi 94 alumni group website
 
 ## 🧰 Tools
 
@@ -28,7 +28,3 @@ Feel free to peep the `package.json` file to see all available scripts and packa
 ### 🔥 Tip:
 
 Running `npm run build && npx serve dist` will boot up a local server of your production site to preview before deployment.
-
-### 👋🏻 Thank you!
-
-I appreciate you taking time to check out the TEA stack, Please leave a star and share it if you found it useful!

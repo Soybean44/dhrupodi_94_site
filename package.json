@@ -15,21 +15,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattwaler/tea-stack.git"
+    "url": "git+https://github.com/Soybean44/dhrupodi_94_site.git"
   },
   "keywords": [
     "tailwind",
     "eleventy",
     "alpine"
   ],
-  "author": "Matt Waler",
+  "author": "Sovereign Shahid",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mattwaler/tea-stack/issues"
+    "url": "https://github.com/Soybean44/dhrupodi_94_site/issues"
   },
-  "homepage": "https://github.com/mattwaler/tea-stack#readme",
+  "homepage": "https://github.com/Soybean44/dhrupodi_94_site#readme",
   "dependencies": {
-    "alpinejs": "^3.1.0"
+    "alpinejs": "^3.1.0",
+    "nunjucks": "^3.2.4"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
