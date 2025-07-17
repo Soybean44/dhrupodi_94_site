@@ -8,7 +8,7 @@
   <title>{{ title }} | TEA Stack</title>
 </head>
 
-<body class="{{ env.devMode ? 'debug-screens' }}">
+<body class="{{ env.devMode ? 'debug-screens' }} bg-gray-800">
   {% include 'header.twig' %}
   {% block body %}
     {{ content|raw }}
