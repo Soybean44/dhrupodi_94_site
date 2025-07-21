@@ -1,9 +1,7 @@
 {% extends 'layout.twig' %}
 
 {% block body %}
-  <div class="container py-16">
-    <div class="prose max-w-none">
+  <div class="container py-16 max-w-none flex-1 h-full text-inherit">
       {{ content|raw }}
-    </div>
   </div>
 {% endblock %}

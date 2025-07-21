@@ -1,23 +1,21 @@
-<header class="bg-gray-900">
-  <nav class="container" aria-label="Top">
+<header class="bg-zinc-950 z-10">
+  <nav class="container font-medium" aria-label="Top">
     <div
-      class="flex w-full items-center justify-between border-b border-gray-200 py-6 lg:border-none"
+      class="flex w-full items-center justify-between border-b border-zinc-200 py-6 lg:border-none"
     >
-      <div class="flex items-center">
-        <a href="/">
-          <img src="/logo.png" class="h-20 w-auto"/>
-        </a>
-        <div class="ml-10 space-x-4">
-          <span class="text-xl text-white">Dhrupodi 94</span>
-        </div>
+      <div class="flex-none">
+          <a href="/" class="flex justify-between items-center">
+            <img src="/logo.png" class="h-20 w-auto"/>
+            <span class="flex-1 px-5 text-xl">Dhrupodi 94</span>
+          </a>
       </div>
       <div class="ml-10 hidden space-x-8 lg:block">
         {% for item in navigation %}
           <a
             href="{{ item.route }}"
             class="{{
-              page.url == item.route ? 'font-black' : 'font-medium'
-            }} text-base text-white hover:text-red-600"
+              page.url == item.route ? 'font-black' : 'font-normal'
+            }} text-base hover:text-rose-500"
           >
             {{ item.name }}
           </a>

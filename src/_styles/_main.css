@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 @import 'tailwindcss' source('../../src');
 @import './base.css' layer(base);
 @import './components.css' layer(components);
@@ -19,4 +20,8 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
+
+@theme {  
+  --font-roboto: "Roboto Slab", serif; 
 }
