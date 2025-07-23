@@ -1,1 +1,4 @@
 /* Custom Components Go Here. */
+.markdown p {
+  @apply prose text-inherit text-lg/10 min-w-full ml-2 whitespace-break-spaces mb-2;
+}

@@ -1,7 +1,7 @@
 <header class="bg-zinc-950 z-10">
-  <nav class="container font-medium" aria-label="Top">
+  <nav class="container font-medium max-w-full px-20" aria-label="Top">
     <div
-      class="flex w-full items-center justify-between border-b border-zinc-200 py-6 lg:border-none"
+      class="flex w-full items-center justify-between py-6 lg:border-none"
     >
       <div class="flex-none">
           <a href="/" class="flex justify-between items-center">
@@ -14,12 +14,16 @@
           <a
             href="{{ item.route }}"
             class="{{
-              page.url == item.route ? 'font-black' : 'font-normal'
-            }} text-base hover:text-rose-500"
+              ((page.url == '/' and item.route == '/') or (item.route != '/' and item.route in page.url)) ? 'font-semibold' : 'font-normal'
+            }} text-base hover:text-rose-500 transition-colors"
           >
             {{ item.name }}
           </a>
         {% endfor %}
+      </div>
+      <div class="ml-10 lg:hidden space-x-8 md:block">
+        <!-- Placeholder for Menu Icon -->
+        Menu 
       </div>
     </div>
   </nav>
