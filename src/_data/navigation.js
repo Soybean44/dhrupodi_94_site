@@ -4,4 +4,5 @@ export default [
   { name: 'Chapters', route: '/chapters/' },
   { name: 'Gallery', route: '/gallery/' },
   { name: 'Members', route: '/members/' },
+  { name: 'Contact', route: '/contact/' },
 ]
