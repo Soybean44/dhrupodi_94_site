@@ -1,12 +1,15 @@
-<header class="bg-zinc-950 z-10">
-  <nav class="container font-medium max-w-full px-20" aria-label="Top">
+<header
+  x-data="{ open: false }" x-on:click.outside="open = false"
+  class="bg-zinc-950"
+>
+  <nav class="container font-medium max-w-full md:px-20 text-lg lg:text-xl z-20" aria-label="Top">
     <div
       class="flex w-full items-center justify-between py-6 lg:border-none"
     >
-      <div class="flex-none">
+      <div class="flex-1">
           <a href="/" class="flex justify-between items-center">
             <img src="/logo.png" class="h-20 w-auto"/>
-            <span class="flex-1 px-5 text-xl">Dhrupodi 94</span>
+            <span class="flex-1 px-5 ">Dhrupodi 94</span>
           </a>
       </div>
       <div class="ml-10 hidden space-x-8 lg:block">
@@ -21,10 +24,25 @@
           </a>
         {% endfor %}
       </div>
-      <div class="ml-10 lg:hidden space-x-8 md:block">
+      <div x-on:click="open = !open" class="ml-10 lg:hidden space-x-8  block">
         <!-- Placeholder for Menu Icon -->
         Menu 
       </div>
     </div>
   </nav>
+  <div x-show="open" x-transition  :class="{ 'hidden': ! open, 'grid': open }" class="absolute top-32 hidden bg-zinc-900 gap-1 grid-cols-1 justify-between w-screen h-fit z-0 py-2 rounded-b-md">
+    {% for item in navigation %}
+      <div class="bg-zinc-800 rounded-md h-full"> 
+        <a
+          href="{{ item.route }}"
+          class="{{
+          ((page.url == '/' and item.route == '/') or (item.route != '/' and item.route in page.url)) ? 'font-semibold' : 'font-normal'
+          }} text-base transition-colors"
+        >
+          {{ item.name }}
+        </a>
+      </div>
+    {% endfor %}
+
+  </div>
 </header>

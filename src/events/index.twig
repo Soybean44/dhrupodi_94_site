@@ -8,12 +8,12 @@ title: 'Events'
   <main class="container py-16 flex-1 h-full max-w-none text-inherit">
     <h1 class="text-center font-bold text-5xl pb-12 align-middle">Events</h1>
 
-    <!-- TODO: Create Event Cards -->
     <div class="container">
     {% for event in collections.event %}
       <div class="bg-zinc-500 h-50 max-w-xs rounded-lg overflow-hidden shadow-lg transition-transform ease-initial hover:rotate-2 hover:scale-105">
         <a href="{{ event.url }}" class="h-full w-full flex flex-col justify-between justify-items-center">
-          <div class="bg-[url('{{event.data.img}}')] bg-cover bg-center grow-8" >
+          <!-- Use inline styles for the background image since its more stable than tailwind -->
+          <div class="bg-cover bg-center grow-8" style="background-image: url('{{event.data.img}}');" >
            </div>
            <div class="grow-1 flex items-center">
              <h2 class="text-2xl px-3.5">{{ event.data.title }}</h2>

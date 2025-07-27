@@ -1,8 +1,8 @@
 ---
 title: 'Example Event'
-title_color: 'dark'
+title_color: 'light'
 tags: event
-img: '/public/logo.png' # This is source code path not the production path
+img: '/gallery/images/dhrupodi_94-1.jpg' # This is source code path not the production path
 layout: markdown
 ---
 This is an example event
