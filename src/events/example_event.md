@@ -2,7 +2,7 @@
 title: 'Example Event'
 title_color: 'light'
 tags: event
-img: '/gallery/images/dhrupodi_94-1.jpg' # This is source code path not the production path
+img: '/gallery/images/dhrupodi_94-1.jpg' # This is route to the image, typically remove /public/ from the file path and this should work
 layout: markdown
 ---
 This is an example event
