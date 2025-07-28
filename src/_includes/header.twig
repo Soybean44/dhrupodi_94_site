@@ -32,12 +32,12 @@
   </nav>
   <div x-show="open" x-transition  :class="{ 'hidden': ! open, 'grid': open }" class="absolute top-32 hidden bg-zinc-900 gap-1 grid-cols-1 justify-between w-screen h-fit z-0 py-2 rounded-b-md">
     {% for item in navigation %}
-      <div class="bg-zinc-800 rounded-md h-full"> 
+      <div class="bg-zinc-800 rounded-md h-full py-5"> 
         <a
           href="{{ item.route }}"
           class="{{
           ((page.url == '/' and item.route == '/') or (item.route != '/' and item.route in page.url)) ? 'font-semibold' : 'font-normal'
-          }} text-base transition-colors"
+          }} text-2xl transition-colors mx-2"
         >
           {{ item.name }}
         </a>
