@@ -2,3 +2,7 @@
 .markdown p {
   @apply prose text-inherit text-lg/10 min-w-full ml-2 whitespace-break-spaces mb-2;
 }
+
+.markdown p:has(img) {
+  @apply flex flex-col items-center;
+}
