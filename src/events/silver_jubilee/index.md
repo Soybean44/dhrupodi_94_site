@@ -1,8 +1,8 @@
 ---
-title: 'Example Event'
+title: 'Silver Jubilee'
 title_style: 'hidden'
 tags: event
-img: './silver_jubilee.jpg' # This is route to the image, typically remove /public/ from the file path and this should work
+img: '/events/silver_jubilee/silver_jubilee.jpg' # This is route to the image, typically remove /public/ from the file path and this should work
 layout: markdown
 ---
 
